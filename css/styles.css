@@ -1,0 +1,140 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 40px;
+    background-color: #3a3a3a;
+    color: #dcdcdc;
+}
+
+h1 {
+    color: #ffffff;
+    text-align: center;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    background-color: #4a4a4a;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+    position: relative; /* GitHubリンクの配置に必要 */
+}
+
+label {
+    display: block;
+    padding: 8px;
+    width: 400px;
+    margin: 20px auto;
+    text-align: left;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+input {
+    width: 400px;
+    padding: 10px;
+    font-size: 16px;
+    display: block;
+    margin: 0 auto 20px;
+    background-color: #6a6a6a;
+    border: 2px solid #ffffff;
+    border-radius: 4px;
+    color: #ffffff;
+}
+
+input::placeholder {
+    color: #cccccc;
+}
+
+button {
+    padding: 12px 20px;
+    font-size: 16px;
+    background-color: #00aaff;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+button:hover {
+    background-color: #008ecc;
+    transform: translateY(-2px);
+}
+
+.results {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+    gap: 20px;
+}
+
+.result-column {
+    flex: 1;
+    padding: 20px;
+    background-color: #5a5a5a;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.result-column h2 {
+    margin-top: 0;
+    color: #ffffff;
+    border-bottom: 2px solid #ffffff;
+    padding-bottom: 5px;
+}
+
+.result-content {
+    margin-top: 15px;
+    padding: 15px;
+    background-color: #6a6a6a;
+    border-radius: 4px;
+    min-height: 50px;
+    word-wrap: break-word;
+    text-align: left;
+    max-height: 300px;
+    overflow-y: auto;
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.time-taken {
+    margin-top: 15px;
+    padding: 8px;
+    background-color: #777777;
+    border-radius: 4px;
+    font-size: 16px;
+    color: #ffff66;
+    font-weight: bold;
+}
+
+/* GitHubリンクのスタイル */
+.github-link {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.github-link:hover {
+    color: #00aaff;
+}
+
+.github-link svg {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+    fill: currentColor;
+    transition: fill 0.3s;
+}
+
+.github-link:hover svg {
+    fill: #00aaff;
+}
